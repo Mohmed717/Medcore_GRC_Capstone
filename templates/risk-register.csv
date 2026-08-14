@@ -1,0 +1,2 @@
+Risk ID,Asset ID,Threat ID,Risk Statement,Likelihood (1-5),Impact (1-5),Risk Score,Risk Level,Risk Owner,Existing Controls,Treatment,Target Residual Risk,Due Date,Status,Source/Evidence
+R-001,A-001,T-001,TBD,3,5,15,High,TBD,TBD,Mitigate,TBD,TBD,Open,TBD

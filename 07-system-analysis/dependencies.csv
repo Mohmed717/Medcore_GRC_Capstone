@@ -1,0 +1,9 @@
+Task ID,Task,Owner,Depends On,Input,Output,Status,Notes
+A-001,Define Scope,Team Lead,TBD,Project Scenario,Scope + Requirements,Not Started,
+A-002,Threat Modeling,Threat Modeler,A-001,Scope + Assets,Threat Model,Not Started,
+A-003,Risk Assessment,Risk Analyst,A-001 + A-002,Assets + Threats,Risk Register,Not Started,
+A-004,Control Assessment,Control Owner,A-003,Risks,Control Matrix,Not Started,
+A-005,Compliance Mapping,Compliance Officer,A-004,Risks + Controls,Framework Mapping,Not Started,
+A-006,Policy Writing,Policy Writer,A-003 + A-004 + A-005,Risks + Controls + Gaps,Policies,Not Started,
+A-007,Final Integration,Team Lead,A-003 + A-004 + A-005 + A-006,All Deliverables,Final Report,Not Started,
+A-008,Presentation,Team Lead,A-007,Final Report,Slides + Notes,Not Started,

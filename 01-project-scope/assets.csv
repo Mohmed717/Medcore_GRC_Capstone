@@ -1,0 +1,5 @@
+Asset ID,Asset Name,Description,Owner,Classification,Criticality,Notes
+A-001,Patient Records,TBD,TBD,Confidential,Critical,
+A-002,Cloud Patient-Record System,TBD,TBD,Confidential,Critical,
+A-003,User Accounts,TBD,TBD,Confidential,High,
+A-004,Cloud Storage,TBD,TBD,Confidential,High,
