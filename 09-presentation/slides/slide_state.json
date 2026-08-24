@@ -2,8 +2,8 @@
   "project_info": {
     "title": "Six Voices, One Go-Live Decision",
     "created": 1787582979.168,
-    "last_updated": 1787585264.619,
-    "total_slides": 11
+    "last_updated": 1787586688.895,
+    "total_slides": 12
   },
   "slides": [
     {
@@ -57,9 +57,14 @@
       "pageNum": 10
     },
     {
-      "id": "closing",
+      "id": "github_evidence_trail",
       "state": "edited",
       "pageNum": 11
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 12
     }
   ],
   "outline": [
@@ -112,6 +117,12 @@
       "id": "go_live_gate",
       "title": "The Conditional Go-Live Gate",
       "summary": "List the eight pre-go-live evidence gates and the COO decision."
+    },
+    {
+      "id": "github_evidence_trail",
+      "title": "GitHub Evidence Trail",
+      "summary": "Direct links to the GitHub files that support each role's explanation and the final GRC decision.",
+      "image_plan": "No image needed; use a clean editorial link directory with role-color accents."
     },
     {
       "id": "closing",
