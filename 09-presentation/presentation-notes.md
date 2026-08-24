@@ -7,8 +7,8 @@
 | Segment | Time | Presenter role | Core message |
 |---|---:|---|---|
 | 1. Business context | 1:00 | Hana Saeed — Team Lead / Presenter | MedCore has 14 clinics moving records to one cloud EHR before security governance exists. |
-| 2. Scope and assets | 1:00 | Hana Saeed — Team Lead / Presenter | The design creates 16 material assets, including restricted patient data, endpoints, migration files, vendors, and backups. |
-| 3. Architecture and data flow | 1:00 | Hana Saeed — Team Lead / Presenter | The critical boundaries are the public internet, ClinicCloud, third-party APIs, migration folder, backups, and remote support. |
+| 2. Scope and assets | 1:00 | Hana Saeed — Team Lead / Presenter | The design creates 16 governed assets, including restricted PHI, the SaaS tenant configuration, identities, endpoints, migration files, vendors, and backups. Do not list vendor-owned software or infrastructure as MedCore assets. |
+| 3. Architecture and data flow | 1:00 | Hana Saeed — Team Lead / Presenter | The critical boundaries are the public internet, the ClinicCloud SaaS tenant, the vendor-hosted data repository, third-party APIs, migration folder, backups, and remote support. |
 | 4. Threat actors and attack chain | 1:30 | Hassan Amin — Threat Modeler | A stolen laptop plus no MFA can lead to ClinicCloud access, cross-clinic visibility, and delayed detection. |
 | 5. Risk method and top risks | 1:30 | Mohamed Youssef — Risk Analyst | Sixteen risks were scored qualitatively using Likelihood × Impact; nine are Critical and seven High. |
 | 6. Risk matrix and treatment | 1:00 | Mohamed Youssef — Risk Analyst | The top priorities are MFA, clinic-level authorization, migration-folder protection, endpoint controls, logging, and supplier assurance. |

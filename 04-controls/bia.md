@@ -4,8 +4,8 @@ This qualitative BIA covers the most critical processes and systems described in
 
 | Process / system | Criticality | Financial impact | Operational impact | Reputational impact | Legal / regulatory impact | MTD | RTO | RPO | Dependencies |
 |---|---|---|---|---|---|---|---|---|---|
-| ClinicCloud EHR and patient-record access | Mission-Critical | High | Severe | Severe | Severe | Hours | Hours | Near-zero for newly recorded clinical data | Clinic laptops, internet, vendor application/database, identity store, backup storage |
-| Appointment scheduling and reminders | Important | Medium | High | High | Medium | Hours | Same business day | Same day | ClinicCloud, public internet, SMS/email reminder service |
+| ClinicCloud EHR and patient-record access | Mission-Critical | High | Severe | Severe | Severe | Hours | Hours | Near-zero for newly recorded clinical data | Clinic laptops, internet, vendor-hosted SaaS tenant/data repository, identity service, backup storage |
+| Appointment scheduling and reminders | Important | Medium | High | High | Medium | Hours | Same business day | Same day | ClinicCloud SaaS tenant, public internet, SMS/email reminder service |
 | Claims and billing submission | Important | High | High | High | High | 1–2 days | 1 business day | Same day | ClinicCloud, billing clearinghouse API, billing team |
 | Patient-record migration and reconciliation | Mission-Critical during cutover | High | Severe | High | Severe | Hours during cutover | Same day with rollback | Last validated export | Legacy systems, CSV files, shared migration folder, vendor migration team, ClinicCloud import pipeline |
 | Identity, access review, and audit monitoring | Important | Medium | High | High | Severe | Hours for suspected compromise | Hours for containment | Near-zero for security events | Vendor identity store, ClinicCloud audit logs, MedCore control owner, incident-response contacts |

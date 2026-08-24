@@ -2,13 +2,13 @@
 
 ## Method and boundary
 
-The threat model is limited to the design described in Section 3 of the MedCore Clinics Resource Pack. It uses a lightweight STRIDE-inspired review of the ClinicCloud web application, identities, endpoints, migration path, third-party integrations, backup storage, and remote support path. The system is pre-implementation; the entries identify plausible paths that the design must address, not confirmed incidents.
+The threat model is limited to the design described in Section 3 of the MedCore Clinics Resource Pack. It uses a lightweight STRIDE-inspired review of the ClinicCloud SaaS tenant and service configuration, identities, endpoints, migration path, third-party integrations, backup storage, and remote support path. The vendor-owned application software and infrastructure are treated as a supplier dependency and trust boundary, not as MedCore-owned assets. The system is pre-implementation; the entries identify plausible paths that the design must address, not confirmed incidents.
 
 ## Threat actors
 
 | Actor | Access or motive | Primary paths |
 |---|---|---|
-| External credential attacker | Uses reused or weak credentials to reach the public login. | ClinicCloud identity store and web app. |
+| External credential attacker | Uses reused or weak credentials to reach the public login. | ClinicCloud identity store and SaaS tenant. |
 | Malicious or curious insider | Holds a legitimate staff role and abuses broad access. | Cross-clinic patient search and record access. |
 | Opportunistic thief or malware operator | Obtains a clinic laptop or compromises an endpoint. | Chrome sessions, credentials, and workstation access. |
 | Compromised helpdesk contractor | Abuses remote-support privileges or a compromised tool. | Clinic workstation fleet. |
@@ -17,7 +17,7 @@ The threat model is limited to the design described in Section 3 of the MedCore 
 
 ## Trust boundaries
 
-The design crosses trust boundaries between clinic workstations and the public internet, the public internet and ClinicCloud, ClinicCloud and its primary database, ClinicCloud and the billing/reminder providers, legacy systems and the migration folder, and the IT contractor and endpoints. Every boundary carrying patient, diagnosis, billing, or identity data requires explicit authentication, authorization, encryption, logging, supplier assurance, and lifecycle controls.
+The design crosses trust boundaries between clinic workstations and the public internet, the public internet and the ClinicCloud SaaS tenant, the vendor-hosted tenant and its data repository, ClinicCloud and the billing/reminder providers, legacy systems and the migration folder, and the IT contractor and endpoints. Every boundary carrying patient, diagnosis, billing, or identity data requires explicit authentication, authorization, encryption, logging, supplier assurance, and lifecycle controls.
 
 ## Traceability
 

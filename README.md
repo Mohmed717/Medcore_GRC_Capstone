@@ -4,7 +4,7 @@ This repository contains a complete **design-phase GRC assessment** for MedCore 
 
 ## Decision summary
 
-The project uses **NIST Cybersecurity Framework (CSF) 2.0** consistently. The assessment contains 16 assets, 16 threats, 16 qualitative risks scored with Likelihood × Impact, 16 mapped control areas, a control and evidence assessment, a five-process BIA, a standalone Access Control Policy, an executive summary, a final report, and a three-horizon remediation roadmap.
+The project uses **NIST Cybersecurity Framework (CSF) 2.0** consistently. The assessment contains 16 governed assets, 16 threats, 16 qualitative risks scored with Likelihood × Impact, 16 mapped control areas, a control and evidence assessment, a five-process BIA, a standalone Access Control Policy, an executive summary, a final report, and a three-horizon remediation roadmap. The asset inventory excludes vendor-owned software and infrastructure and records the SaaS tenant configuration, data, identities, endpoints, sessions, service dependencies, processes, and governance artifacts.
 
 The current design posture is **Critical before go-live**: nine risks are Critical and seven are High. The launch gate is conditional on MFA, clinic-level least privilege, endpoint management, migration-file protection and reconciliation, supplier assurance, MedCore audit-log access, incident response, and backup/recovery evidence.
 

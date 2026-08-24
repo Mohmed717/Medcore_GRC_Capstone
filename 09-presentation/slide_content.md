@@ -22,7 +22,7 @@ Visual direction: Command center; navy and teal, structured grid, directional ar
 Role mission: Turn scattered design notes into one defensible decision.
 
 What Hana Saeed did:
-- Extracted 16 assets from the architecture: systems, data stores, endpoints, interfaces, vendors, and processes.
+- Extracted 16 governed assets: tenant configuration, data repositories, identities, endpoints, access sessions, interfaces, migration data, vendors, and processes; vendor-owned application software is excluded.
 - Defined scope, assumptions, ownership handoffs, and the order of work.
 - Integrated threats, risks, controls, BIA, policy, roadmap, and final report without changing the design-phase boundary.
 
@@ -31,11 +31,11 @@ Her deliverables: asset inventory, executive summary, final report, roadmap, pre
 ## Slide 3 — Role 2: Hassan Amin, Threat Modeler
 Visual direction: Threat radar; charcoal background, amber paths, red attack nodes, high-contrast security operations feel.
 
-Role mission: Show how an attacker could move through the ClinicCloud architecture.
+Role mission: Show how an attacker could move through the ClinicCloud SaaS tenant and its trust boundaries.
 
 What Hassan Amin did:
 - Mapped external attackers, insiders, compromised vendors, helpdesk compromise, and availability failures.
-- Traced 16 threats to real assets and trust boundaries in the documented data flow.
+- Traced 16 threats to governed MedCore assets and supplier trust boundaries in the documented data flow.
 - Wrote the multi-step chain: stolen clinic laptop → no MFA → ClinicCloud access → cross-clinic visibility → delayed detection.
 
 His deliverables: threat model, attack paths, and the stolen-laptop/no-MFA attack narrative.
@@ -50,7 +50,7 @@ What Mohamed Youssef did:
 - Scored every risk with the shared qualitative formula: Likelihood × Impact on a 5×5 matrix.
 - Added one-line rationale, related NIST reference, current/planned controls, treatment, owner, and target residual risk.
 
-Her result: 9 Critical and 7 High risks; no invented dollar values or statistical probabilities.
+His result: 9 Critical and 7 High risks; no invented dollar values or statistical probabilities.
 
 ## Slide 5 — Role 4: Mahmoud Mamdouh, Compliance Officer
 Visual direction: Regulatory ledger; ivory paper, royal blue, restrained gold rules, evidence-first editorial style.
@@ -74,7 +74,7 @@ What Islam Khodr did:
 - Built 16 controls plus an evidence register that states what must be collected after implementation.
 - Led the qualitative BIA for five critical processes using Financial, Operational, Reputational, and Legal/Regulatory impact.
 
-Her sign-off: the findings are internally consistent, but operating effectiveness remains unproven until testing and evidence exist.
+His sign-off: the findings are internally consistent, but operating effectiveness remains unproven until testing and evidence exist.
 
 ## Slide 7 — Role 6: Mikhail Sobhi, Policy Writer
 Visual direction: Policy atelier; plum, rose, and parchment with strong typographic hierarchy and numbered rules.

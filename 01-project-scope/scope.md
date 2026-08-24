@@ -2,7 +2,7 @@
 
 ## In scope
 
-This design-phase assessment covers MedCore Clinics' planned migration of patient records from 14 local practice-management systems across three cities to the ClinicCloud multi-tenant SaaS EHR. It covers the ClinicCloud web application and primary database, staff identities and roles, clinic-owned Windows laptops and browser sessions, the public-internet access path, legacy CSV exports and the shared migration folder, the vendor migration pipeline, nightly backup storage, the billing clearinghouse, the SMS/email reminder service, and the IT helpdesk contractor's remote-access path.
+This design-phase assessment covers MedCore Clinics' planned migration of patient records from 14 local practice-management systems across three cities to the ClinicCloud multi-tenant SaaS EHR. It covers the contracted ClinicCloud SaaS tenant and service configuration, the vendor-hosted patient data repository, staff identities and roles, clinic-owned Windows laptops and access sessions, the public-internet access path, legacy CSV exports and the shared migration folder, the vendor migration pipeline, nightly backup storage, the billing clearinghouse, the SMS/email reminder service, and the IT helpdesk contractor's remote-access path. The vendor-owned application software and infrastructure remain outside MedCore's asset inventory; MedCore governs the tenant, data, identities, endpoints, service dependencies, and contractual evidence.
 
 The assessment includes governance, qualitative risk analysis, control and framework mapping, evidence expectations, business impact analysis, access-control policy, and a prioritized remediation roadmap before go-live and after launch.
 
