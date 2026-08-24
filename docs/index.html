@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MedCore Clinics GRC Capstone</title>
+  <meta name="description" content="Design-phase GRC assessment for MedCore Clinics and the ClinicCloud EHR migration." />
+  <style>
+    :root { --ink:#132238; --muted:#5c6b7c; --line:#dce5ee; --navy:#0f2747; --blue:#1d67a7; --teal:#159b9b; --bg:#f5f8fb; --card:#ffffff; --critical:#a62a2a; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--bg); font:16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color:var(--blue); text-decoration:none; font-weight:650; }
+    a:hover { text-decoration:underline; }
+    .hero { background:linear-gradient(135deg,var(--navy),#164d78 58%,#0d8f8b); color:#fff; padding:72px 20px 64px; }
+    .wrap { max-width:1120px; margin:0 auto; }
+    .eyebrow { text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; font-weight:800; opacity:.8; }
+    h1 { max-width:780px; margin:12px 0 12px; font-size:clamp(2.2rem,5vw,4.5rem); line-height:1.04; letter-spacing:-.05em; }
+    .hero p { max-width:780px; margin:0; color:#e4f3fa; font-size:1.1rem; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:28px; }
+    .button { display:inline-block; padding:11px 16px; border-radius:9px; background:#fff; color:var(--navy); font-weight:800; }
+    .button.alt { background:rgba(255,255,255,.1); color:#fff; border:1px solid rgba(255,255,255,.35); }
+    main { padding:36px 20px 72px; }
+    .notice { margin:-62px auto 32px; max-width:1120px; padding:20px 22px; background:#fff; border:1px solid var(--line); border-left:5px solid var(--critical); border-radius:12px; box-shadow:0 16px 35px rgba(19,34,56,.08); position:relative; }
+    .notice strong { color:var(--critical); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:18px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px; box-shadow:0 8px 22px rgba(19,34,56,.04); }
+    .card h2,.card h3 { margin:0 0 8px; line-height:1.2; }
+    .card p { color:var(--muted); margin:0 0 14px; }
+    .stat { font-size:2.25rem; font-weight:850; color:var(--blue); line-height:1; }
+    .label { margin-top:7px; color:var(--muted); font-size:.9rem; }
+    section { margin-top:38px; }
+    section > h2 { font-size:1.65rem; margin:0 0 14px; }
+    .links { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; }
+    .link { display:block; padding:16px 18px; background:#fff; border:1px solid var(--line); border-radius:10px; }
+    .link span { display:block; color:var(--muted); font-size:.9rem; margin-top:3px; font-weight:450; }
+    .steps { counter-reset:item; display:grid; gap:12px; }
+    .step { display:flex; gap:14px; align-items:flex-start; }
+    .step:before { counter-increment:item; content:counter(item); flex:0 0 30px; height:30px; display:grid; place-items:center; border-radius:50%; background:var(--teal); color:white; font-weight:800; }
+    footer { padding:24px 20px 40px; color:var(--muted); text-align:center; font-size:.9rem; }
+    @media (max-width:600px) { .hero { padding-top:52px; } .notice { margin:-34px 20px 24px; } }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">MedCore Clinics · GRC Capstone</div>
+      <h1>Security decisions before ClinicCloud goes live.</h1>
+      <p>A design-phase governance, risk, and compliance assessment for 14 outpatient clinics migrating patient records to a cloud EHR. Built from the supplied MedCore Resource Pack and Unified Handbook.</p>
+      <div class="actions">
+        <a class="button" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/08-final-report/final-report.md">Read the final report</a>
+        <a class="button alt" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/tree/final-report">View repository branch</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="notice wrap"><strong>Go-live posture: Critical before launch.</strong> The repository contains design artifacts only. No operating effectiveness is claimed until the listed controls are implemented, tested, and evidenced.</div>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+        <div class="card"><div class="stat">16</div><div class="label">Assets inventoried</div></div>
+        <div class="card"><div class="stat">16</div><div class="label">Threats and risks traced</div></div>
+        <div class="card"><div class="stat">16</div><div class="label">NIST CSF areas assessed</div></div>
+        <div class="card"><div class="stat">5</div><div class="label">Critical BIA processes</div></div>
+      </div>
+
+      <section>
+        <h2>Core deliverables</h2>
+        <div class="links">
+          <a class="link" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/08-final-report/executive-summary.md">Executive summary<span>Board-level posture, top risks, and the launch recommendation.</span></a>
+          <a class="link" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/03-risk-analysis/risk-register.csv">Risk register<span>Sixteen qualitative risks scored with Likelihood × Impact.</span></a>
+          <a class="link" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/05-compliance/framework-mapping.csv">NIST CSF 2.0 mapping<span>Sixteen control areas with evidence, gaps, owners, and priorities.</span></a>
+          <a class="link" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/08-final-report/roadmap.md">Remediation roadmap<span>Before-go-live, first-90-days, and continuous-improvement actions.</span></a>
+          <a class="link" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/06-policies/policies/access-control-policy.md">Access Control Policy<span>Testable MFA, least privilege, lifecycle, endpoint, and monitoring rules.</span></a>
+          <a class="link" href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/04-controls/bia.md">Business Impact Analysis<span>Impact dimensions, MTD, RTO, RPO, and dependencies.</span></a>
+        </div>
+      </section>
+
+      <section>
+        <h2>How the assessment connects</h2>
+        <div class="steps">
+          <div class="step"><div><strong>Scope and assets.</strong> The design documents are converted into an inventory of systems, data, endpoints, interfaces, vendors, and processes.</div></div>
+          <div class="step"><div><strong>Threats and attack paths.</strong> Each threat is tied to an architecture boundary, including a detailed stolen-laptop/no-MFA chain.</div></div>
+          <div class="step"><div><strong>Risk and gaps.</strong> Risks use the shared 5×5 qualitative matrix, while gaps use NIST CSF 2.0 statuses: Not Addressed, Partially Addressed, or Fully Addressed.</div></div>
+          <div class="step"><div><strong>Controls and decision.</strong> Findings become evidence requirements, policy statements, and a conditional go-live gate owned by the COO.</div></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Framework and sources</h2>
+        <div class="card">
+          <p><strong>NIST Cybersecurity Framework 2.0</strong> is used consistently as the single framework. The official NIST publication describes CSF 2.0 as a taxonomy of high-level cybersecurity outcomes for managing, assessing, prioritizing, and communicating cybersecurity risk.</p>
+          <p><a href="https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20">NIST official publication</a> · <a href="https://doi.org/10.6028/NIST.CSWP.29">NIST CSWP 29 DOI</a> · <a href="https://github.com/Mohmed717/Medcore_GRC_Capstone/blob/final-report/10-evidence/references/source-register.md">Project source register</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>MedCore Clinics GRC Capstone · Fictional design-phase environment · No real patient data</footer>
+</body>
+</html>
