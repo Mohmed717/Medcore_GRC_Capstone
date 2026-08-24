@@ -1,9 +1,10 @@
 Task ID,Task,Owner,Depends On,Input,Output,Status,Notes
-A-001,Define Scope,Team Lead,TBD,Project Scenario,Scope + Requirements,Not Started,
-A-002,Threat Modeling,Threat Modeler,A-001,Scope + Assets,Threat Model,Not Started,
-A-003,Risk Assessment,Risk Analyst,A-001 + A-002,Assets + Threats,Risk Register,Not Started,
-A-004,Control Assessment,Control Owner,A-003,Risks,Control Matrix,Not Started,
-A-005,Compliance Mapping,Compliance Officer,A-004,Risks + Controls,Framework Mapping,Not Started,
-A-006,Policy Writing,Policy Writer,A-003 + A-004 + A-005,Risks + Controls + Gaps,Policies,Not Started,
-A-007,Final Integration,Team Lead,A-003 + A-004 + A-005 + A-006,All Deliverables,Final Report,Not Started,
-A-008,Presentation,Team Lead,A-007,Final Report,Slides + Notes,Not Started,
+A-001,Define Scope and Asset Inventory,Team Lead,None,Project scenario and architecture,Scope plus 16-asset inventory,Complete,Owners marked inferred where the design did not name one
+A-002,Threat Modeling,Threat Modeler,A-001,Scope plus assets,Threat model plus attack chains,Complete,16 threat records and one detailed chain
+A-003,Risk Assessment,Risk Analyst,A-001 + A-002,Assets plus threats,Risk register plus matrix and treatment,Complete,16 qualitative risks scored Likelihood x Impact
+A-004,Control Assessment and BIA,Control Owner / Auditor,A-003,Risks plus design evidence,Control matrix plus evidence verification plus BIA,Complete,No operating effectiveness claimed
+A-005,Compliance Mapping,Compliance Officer,A-003 + A-004,Risks plus controls and design evidence,NIST CSF 2.0 mapping plus gap analysis,Complete,16 control areas assessed
+A-006,Policy Writing,Policy Writer,A-003 + A-004 + A-005,Risks plus controls plus gaps,Standalone policy plus policy mapping,Complete,Policy addresses MFA and least privilege gaps
+A-007,Remediation Roadmap,Team Lead,A-003 + A-005,Risk and gap priorities,Three-horizon roadmap,Complete,Eight launch blockers plus 90-day and continuous actions
+A-008,Final Integration,Team Lead,A-001 + A-002 + A-003 + A-004 + A-005 + A-006 + A-007,All deliverables,Final report plus executive summary,Complete,Cross-links and references included
+A-009,Presentation,Team Lead / Presenter,A-008,Final report,10–12 minute speaker notes,Complete,All six roles have speaking prompts

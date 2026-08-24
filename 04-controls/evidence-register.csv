@@ -1,2 +1,13 @@
 Evidence ID,Control ID,Evidence Description,Source,Location,Date Collected,Owner,Status,Notes
-E-001,C-001,TBD,TBD,TBD,TBD,TBD,Missing,TBD
+E-001,C-001,Authentication design and MFA availability,MedCore Clinics Resource Pack,§3.1 and §3.5,Design phase,Compliance Officer,Available,Supports partial design rating; capture MFA configuration and test after implementation
+E-002,C-002,Two roles and no clinic-level segmentation,MedCore Clinics Resource Pack,§3.1 and §3.5,Design phase,Control Owner / Auditor,Available,Supports partial design rating; approve authorization matrix and review evidence
+E-003,C-003,Vendor and third-party contract gaps,MedCore Clinics Resource Pack,§3.4 and §3.5,Design phase,COO / Procurement,Available,Supports not-addressed rating; complete due diligence and addenda
+E-004,C-004,Architecture asset and data descriptions,MedCore Clinics Resource Pack,§3.1–§3.3,Design phase,Team Lead,Available,Supports partial design rating; confirm owners and operational inventory
+E-005,C-007,Encryption at rest marketing statement without details,MedCore Clinics Resource Pack,§3.4,Design phase,ClinicCloud Vendor,Available but insufficient,Obtain algorithm key backup and rotation evidence
+E-006,C-008,TLS 1.2 for documented connections,MedCore Clinics Resource Pack,§3.2 and §3.4,Design phase,Control Owner / Auditor,Available but incomplete,Verify configuration and file/API protections
+E-007,C-009,Unknown patch status and remote tool TBD,MedCore Clinics Resource Pack,§3.1 §3.2 §3.5,Design phase,Control Owner / Auditor,Available,Supports not-addressed rating; create endpoint and remote-support baseline
+E-008,C-011,No MedCore logging or monitoring access,MedCore Clinics Resource Pack,§3.4,Design phase,Control Owner / Auditor,Available,Supports not-addressed rating; contract log export and alerts
+E-009,C-013,No incident response or breach notification process,MedCore Clinics Resource Pack,§2 and §3.4,Design phase,Team Lead / Compliance Officer,Available,Supports not-addressed rating; approve and exercise plan
+E-010,C-014,Nightly backup with region and encryption unconfirmed,MedCore Clinics Resource Pack,§3.2 and §3.4,Design phase,Control Owner / Auditor,Available but incomplete,Define objectives and perform restore test
+E-011,C-016,CSV migration and shared-folder flow,MedCore Clinics Resource Pack,§3.1–§3.3,Design phase,Team Lead / Vendor Migration Team,Available,Supports not-addressed rating; create chain-of-custody and disposal records
+E-012,C-001;C-002;C-003;C-007;C-009;C-011;C-013;C-014,Implemented control evidence,MedCore Clinics Resource Pack,Pre-implementation statement,Design phase,Control Owner / Auditor,Missing,No operating effectiveness conclusion is permitted until implementation and testing

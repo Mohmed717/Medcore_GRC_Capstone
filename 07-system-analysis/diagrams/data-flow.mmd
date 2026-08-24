@@ -1,0 +1,18 @@
+flowchart LR
+  L1[Legacy systems x14] -->|CSV export| MF[Shared migration folder]
+  MF -->|one-time bulk import| MP[ClinicCloud migration pipeline]
+  W[Clinic workstations x14\nWindows + Chrome] -->|HTTPS / public internet| APP[ClinicCloud web app]
+  APP --> DB[(ClinicCloud primary DB\nPII / PHI / appointments)]
+  APP -->|API / HTTPS| BILL[Billing clearinghouse]
+  APP -->|API / HTTPS| REM[SMS / Email reminder service]
+  APP -->|nightly backup| BK[(Vendor backup storage\nregion/encryption TBD)]
+  HD[IT helpdesk contractor\nremote tool TBD] -->|remote access| W
+  ID[Vendor identity store\nusername/password; MFA not enabled] --> APP
+  LOG[Vendor audit logs\nMedCore access not designed] -.-> APP
+
+  classDef restricted fill:#fee2e2,stroke:#991b1b,color:#450a0a;
+  classDef external fill:#dbeafe,stroke:#1d4ed8,color:#172554;
+  classDef open fill:#fef3c7,stroke:#b45309,color:#451a03;
+  class DB,BK,MF,ID restricted;
+  class BILL,REM,HD external;
+  class MF,BK,HD,LOG open;

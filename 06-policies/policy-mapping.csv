@@ -1,2 +1,11 @@
 Policy ID,Policy,Related Risk IDs,Related Control IDs,Framework Reference,Owner,Status
-P-001,Access Control Policy,TBD,TBD,TBD,TBD,Draft
+P-001,Access Control Policy,R-001;R-013,C-001,PR.AA-03,Compliance Officer,Required before go-live
+P-002,Access Control Policy,R-001;R-015,C-001,PR.AA-03,Control Owner / Auditor,Required before go-live
+P-003,Access Control Policy,R-003,C-002,PR.AA-05,Control Owner / Auditor,Required before go-live
+P-004,Access Control Policy,R-003;R-015,C-002,PR.AA-05,Clinical Directors / Control Owner,Required before go-live
+P-005,Access Control Policy,R-015,C-002,PR.AA-05,Control Owner / Auditor,Required before go-live
+P-006,Access Control Policy,R-013,C-001,PR.AA-03,Compliance Officer,Required before go-live
+P-007,Access Control Policy,R-002;R-004,C-009,PR.PS-01,Control Owner / Auditor,Required before go-live
+P-008,Access Control Policy,R-009,C-011,DE.CM-03,Control Owner / Auditor,Required before go-live
+P-009,Access Control Policy,R-012,C-009,PR.PS-01,IT Helpdesk Contractor,Required before go-live
+P-010,Access Control Policy,R-003;R-015,C-001;C-002,GV.RM,COO / Compliance Officer,Required before go-live
