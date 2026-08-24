@@ -24,7 +24,7 @@ The current design posture is **Critical before go-live**: nine risks are Critic
 
 ## Workflow and governance
 
-The repository follows the supplied workflow: assets and scope → threats → risks → controls and BIA → framework mapping → policy → roadmap and final integration → presentation. Work should be reviewed by another role before merge. Named team members are intentionally not invented and remain a team decision.
+The repository follows the supplied workflow: assets and scope → threats → risks → controls and BIA → framework mapping → policy → roadmap and final integration → presentation. Work should be reviewed by another role before merge. The team members assigned for this presentation are Mohamed Youssef (Risk Analyst), Mahmoud Mamdouh (Compliance Officer), Hassan Amin (Threat Modeler), Islam Khodr (Control Owner / Auditor), Mikhail Sobhi (Policy Writer), and Hana Saeed (Team Lead / Presenter).
 
 ## Important limitation
 

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedCore GRC Capstone</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0}
+    .slide-container{width:1280px;min-height:720px;background:linear-gradient(135deg,#071A2B 0%,#0A2540 58%,#0E5B68 100%);color:#F7FBFC;font-family:Arial,sans-serif;padding:56px 72px 30px;display:flex;flex-direction:column;justify-content:flex-start}
+    .topline{display:flex;justify-content:space-between;align-items:center;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#8BD9D6}.rule{height:4px;width:152px;background:#E3A83B;margin-top:14px}
+    .main{display:grid;grid-template-columns:1.35fr .85fr;gap:40px;align-items:center}
+    .kicker{font-size:20px;letter-spacing:3px;text-transform:uppercase;color:#8BD9D6;font-weight:700}
+    .title{font-size:66px;line-height:1.02;letter-spacing:-3px;margin:18px 0 20px;font-weight:800}
+    .subtitle{font-size:24px;line-height:1.35;color:#D9E8ED;max-width:700px}
+    .badge{display:inline-block;margin-top:28px;padding:10px 16px;border:1px solid #62C6C2;color:#F7FBFC;font-size:14px;letter-spacing:1px;text-transform:uppercase}
+    .role-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .role{min-height:72px;padding:14px 12px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.08);display:flex;align-items:flex-end;font-size:16px;line-height:1.15}
+    .role:nth-child(2n){background:rgba(227,168,59,.16);border-color:rgba(227,168,59,.55)}.role small{display:block;color:#A9D8D7;font-size:11px;text-transform:uppercase;letter-spacing:1px;margin-bottom:7px}
+    .footer{display:flex;justify-content:space-between;color:#A9BEC8;font-size:13px;border-top:1px solid rgba(255,255,255,.18);padding-top:18px;margin-top:18px}
+    .footer strong{color:#F7FBFC}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="topline"><span>MedCore Clinics · GRC Capstone</span><span>Design / Pre-Implementation</span></div>
+    <div class="main">
+      <div>
+        <div class="kicker">Six voices, one decision</div><div class="rule"></div>
+        <div class="title">Security decisions<br/>before ClinicCloud<br/>goes live.</div>
+        <div class="subtitle">A role-based walkthrough of the MedCore Clinics GRC assessment for a 14-clinic cloud EHR migration.</div>
+        <div class="badge">NIST CSF 2.0 · Qualitative Risk Assessment</div>
+      </div>
+      <div class="role-grid">
+        <div class="role"><div><small>Role 01</small>Hana Saeed<br/>Team Lead</div></div>
+        <div class="role"><div><small>Role 02</small>Hassan Amin<br/>Threat Modeler</div></div>
+        <div class="role"><div><small>Role 03</small>Mohamed Youssef<br/>Risk Analyst</div></div>
+        <div class="role"><div><small>Role 04</small>Mahmoud Mamdouh<br/>Compliance</div></div>
+        <div class="role"><div><small>Role 05</small>Islam Khodr<br/>Control Auditor</div></div>
+        <div class="role"><div><small>Role 06</small>Mikhail Sobhi<br/>Policy Writer</div></div>
+      </div>
+    </div>
+    <div class="footer"><span>Fictional environment · No real patient data</span><strong>MedCore Clinics</strong></div>
+  </div>
+</body>
+</html>

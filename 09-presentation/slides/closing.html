@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Team, One Defensible Decision</title>
+  <style>
+    *{box-sizing:border-box} body{margin:0}
+    .slide-container{width:1280px;min-height:720px;background:linear-gradient(135deg,#071A2B 0%,#0A2540 58%,#0E5B68 100%);color:#F7FBFC;font-family:Arial,sans-serif;padding:56px 72px 42px;display:flex;flex-direction:column;justify-content:space-between}
+    .topline{display:flex;justify-content:space-between;align-items:center;font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#8BD9D6}
+    .rule{height:4px;width:152px;background:#E3A83B;margin-top:14px}
+    .main{margin-top:20px;flex-grow:1;display:flex;flex-direction:column;justify-content:center}
+    .title{font-size:56px;line-height:1.1;letter-spacing:-2px;margin:0 0 24px;font-weight:800}
+    .lead{font-size:26px;line-height:1.4;color:#D9E8ED;max-width:1000px;margin-bottom:24px}
+    .contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:24px}
+    .contrast-box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);padding:24px;min-height:180px}
+    .contrast-box.highlight{background:rgba(227,168,59,.16);border-color:rgba(227,168,59,.55)}
+    .contrast-label{font-size:14px;text-transform:uppercase;letter-spacing:2px;color:#A9D8D7;margin-bottom:16px;font-weight:700}
+    .highlight .contrast-label{color:#E3A83B}
+    .contrast-quote{font-size:24px;line-height:1.4;font-style:italic}
+    .references{border-top:1px solid rgba(255,255,255,.18);padding-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
+    .ref-title{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:#8BD9D6;margin-bottom:8px;font-weight:700}
+    .ref-text{font-size:16px;color:#A9BEC8;line-height:1.4}
+    .thank-you{font-size:32px;font-weight:800;color:#E3A83B;text-align:right;margin-top:20px}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="topline"><span>11 · Conclusion</span><span>MedCore Clinics GRC Capstone</span></div>
+    <div class="main">
+      <div class="rule"></div>
+      <h1 class="title">One team, one defensible decision.</h1>
+      <p class="lead">MedCore can gain the operational benefits of a shared cloud EHR, but only after the security design becomes an evidenced operating capability.</p>
+      
+      <div class="contrast-grid">
+        <div class="contrast-box">
+          <div class="contrast-label">The team did not ask:</div>
+          <div class="contrast-quote">“Does the vendor say it is secure?”</div>
+        </div>
+        <div class="contrast-box highlight">
+          <div class="contrast-label">The team asked:</div>
+          <div class="contrast-quote">“What could go wrong, which control outcome is missing, who owns the fix, and what evidence will prove it?”</div>
+        </div>
+      </div>
+
+      <div class="references">
+        <div>
+          <div class="ref-title">Framework Reference</div>
+          <div class="ref-text">NIST Cybersecurity Framework 2.0, NIST CSWP 29<br/>https://doi.org/10.6028/NIST.CSWP.29</div>
+        </div>
+        <div>
+          <div class="ref-title">Project Evidence</div>
+          <div class="ref-text">MedCore GRC Resource Pack, Section 3<br/>Design and architecture source of truth.</div>
+        </div>
+      </div>
+      <div class="thank-you">Thank you.</div>
+    </div>
+  </div>
+</body>
+</html>

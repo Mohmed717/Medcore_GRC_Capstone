@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "title": "Six Voices, One Go-Live Decision",
+    "created": 1787581718.724,
+    "last_updated": 1787582121.402,
+    "total_slides": 11
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "decision",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "team_lead",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "threat_modeler",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "risk_analyst",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "compliance",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "auditor",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "policy_writer",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "traceability",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "go_live_gate",
+      "state": "edited",
+      "pageNum": 10
+    },
+    {
+      "id": "closing",
+      "state": "edited",
+      "pageNum": 11
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "Six Voices, One Go-Live Decision",
+      "summary": "Cover slide for the MedCore Clinics GRC capstone and ClinicCloud design-phase assessment."
+    },
+    {
+      "id": "decision",
+      "title": "The Decision Before Go-Live",
+      "summary": "Executive decision slide: critical posture, 16 risks, and conditional launch gate."
+    },
+    {
+      "id": "team_lead",
+      "title": "Lina — Team Lead / Presenter",
+      "summary": "Explain how Lina created the asset inventory and integrated the full GRC package."
+    },
+    {
+      "id": "threat_modeler",
+      "title": "Omar — Threat Modeler",
+      "summary": "Explain how Omar mapped threat actors, trust boundaries, and the stolen-laptop attack chain."
+    },
+    {
+      "id": "risk_analyst",
+      "title": "Nour — Risk Analyst",
+      "summary": "Explain how Nour built the qualitative 5x5 risk register and prioritized 16 risks."
+    },
+    {
+      "id": "compliance",
+      "title": "Kareem — Compliance Officer",
+      "summary": "Explain NIST CSF 2.0 selection, 16-area gap analysis, and regulatory exposures."
+    },
+    {
+      "id": "auditor",
+      "title": "Salma — Control Owner / Auditor",
+      "summary": "Explain evidence verification, 16 controls, and the five-process BIA."
+    },
+    {
+      "id": "policy_writer",
+      "title": "Youssef — Policy Writer",
+      "summary": "Explain the standalone Access Control Policy and its ten testable rules."
+    },
+    {
+      "id": "traceability",
+      "title": "From Six Roles to One Traceability Chain",
+      "summary": "Show how each role hands off evidence, risks, gaps, controls, and policy into one chain."
+    },
+    {
+      "id": "go_live_gate",
+      "title": "The Conditional Go-Live Gate",
+      "summary": "List the eight pre-go-live evidence gates and the COO decision."
+    },
+    {
+      "id": "closing",
+      "title": "One Team, One Defensible Decision",
+      "summary": "Closing slide with the core lesson and references."
+    }
+  ]
+}

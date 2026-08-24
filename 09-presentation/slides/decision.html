@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>The Decision Before Go-Live</title>
+<style>
+*{box-sizing:border-box}body{margin:0}
+.slide-container{width:1280px;min-height:720px;background:#F0F4F8;color:#0A2540;font-family:Arial,sans-serif;padding:44px 68px 0;display:flex;flex-direction:column}
+.top{display:flex;justify-content:space-between;align-items:end;border-bottom:4px solid #0A2540;padding-bottom:16px}
+.kicker{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#D97706;font-weight:700}
+.title{font-size:42px;line-height:1.08;margin-top:10px;font-weight:800;letter-spacing:-1px}
+.main{display:grid;grid-template-columns:42% 58%;min-height:540px;margin-top:8px}
+.left{background:#0A2540;color:#fff;padding:24px 28px 0;display:flex;flex-direction:column;justify-content:space-between}
+.big{font-size:94px;line-height:.95;font-weight:800;letter-spacing:-5px}
+.critical{font-size:22px;text-transform:uppercase;letter-spacing:4px;color:#F1B24A;margin-top:12px}
+.left p{font-size:20px;line-height:1.35;color:#D9E8ED;max-width:390px;margin-top:12px}
+.metrics{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid rgba(255,255,255,.3);padding-top:8px;margin-top:8px}
+.metric strong{display:block;font-size:30px;color:#fff}
+.metric span{font-size:13px;color:#A9BEC8}
+.right{padding:20px 0 0 36px}
+.lead{font-size:23px;line-height:1.3;max-width:600px;margin-bottom:18px}
+.flow{display:grid;gap:0;border-left:5px solid #159B9B}
+.flow-row{display:grid;grid-template-columns:112px 1fr;min-height:56px;border-bottom:1px dashed #A8B7C5;padding:8px 12px 0}
+.flow-row:last-child{border-bottom:0}
+.flow-row .num{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:#D97706;font-weight:800}
+.flow-row h3{font-size:22px;margin:0 0 5px}
+.flow-row p{font-size:15px;color:#4A5568;margin:0;line-height:1.35}
+.gate{margin-top:18px;background:#D97706;color:#fff;padding:18px 22px;font-size:20px;font-weight:800;line-height:1.25}
+.footer{display:flex;justify-content:space-between;margin-top:2px;font-size:12px;color:#6B7B8B;letter-spacing:.5px}
+</style>
+</head>
+<body><div class="slide-container">
+<div class="top"><div><div class="kicker">01 · Executive decision</div><div class="title">The decision before go-live</div></div><div class="kicker">MedCore Clinics · NIST CSF 2.0</div></div>
+<div class="main"><div class="left"><div><div class="big">CRITICAL</div><div class="critical">Design-phase posture</div><p>One cloud EHR. Public-internet access. Security controls still need to become evidence.</p></div><div class="metrics"><div class="metric"><strong>16</strong><span>architecture-specific risks</span></div><div class="metric"><strong>9 / 7</strong><span>Critical / High</span></div></div></div>
+<div class="right"><div class="lead">The recommendation is not “delay forever.” It is: <strong>make launch conditional on proof.</strong></div><div class="flow"><div class="flow-row"><div class="num">Context</div><div><h3>14 clinics → one ClinicCloud</h3><p>Patient records, scheduling, billing, and reminders converge in a vendor-hosted SaaS platform.</p></div></div><div class="flow-row"><div class="num">Exposure</div><div><h3>Identity, access, endpoint, supplier, and response gaps</h3><p>MFA is not enabled; clinic-level segmentation, MedCore log access, and incident response are not designed.</p></div></div><div class="flow-row"><div class="num">Gate</div><div><h3>Evidence before access</h3><p>Eight must-fix areas require implementation, testing, owner review, and COO acceptance.</p></div></div></div><div class="gate">Decision: no migration or production access until RM-01 → RM-08 are evidenced.</div></div></div>
+<div class="footer"><span>Fictional environment · qualitative assessment only</span><span>01 / 11</span></div>
+</div></body></html>
