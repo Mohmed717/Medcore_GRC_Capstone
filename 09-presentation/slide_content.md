@@ -115,21 +115,7 @@ Before go-live, MedCore must evidence:
 
 Decision: the COO accepts residual risk only after the Control Owner / Auditor confirms the evidence.
 
-## Slide 10 — GitHub Evidence Trail
-Visual direction: Clean reference directory with role-color accents and clickable links.
-
-Use these links while presenting: each one opens the evidence behind a role, a finding, or the final decision.
-
-- Hana Saeed: `scope.md` and `assets.csv`.
-- Hassan Amin: `threat-model.md` and `stolen-laptop-no-mfa.md`.
-- Mohamed Youssef: `risk-register.csv` and `risk-matrix.md`.
-- Mahmoud Mamdouh: `framework-mapping.csv` and `gap-assessment.md`.
-- Islam Khodr: `control-matrix.csv`, `evidence-register.csv`, and `bia.md`.
-- Mikhail Sobhi: `access-control-policy.md` and `policy-mapping.csv`.
-
-Final decision links: `final-report.md`, `roadmap.md`, and `presentation-notes.md`.
-
-## Slide 11 — Closing: one team, one defensible decision
+## Slide 10 — Closing: one team, one defensible decision
 MedCore can gain the operational benefits of a shared cloud EHR, but only after the security design becomes an evidenced operating capability.
 
 The team did not ask, “Does the vendor say it is secure?”

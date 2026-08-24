@@ -43,10 +43,6 @@ Explain the evidence rule and BIA. Nightly backup is a planned dependency, not a
 
 Highlight that the policy contains numbered, testable statements. The most important rule is that every human account must use MFA before activation, followed by clinic-level least privilege and timely offboarding.
 
-## GitHub Evidence Trail
-
-Use the Evidence Trail slide during the discussion. Hana Saeed should open `scope.md` and `assets.csv`; Hassan Amin should open `threat-model.md` and the stolen-laptop scenario; Mohamed Youssef should open `risk-register.csv`; Mahmoud Mamdouh should open `framework-mapping.csv` and `gap-assessment.md`; Islam Khodr should open `control-matrix.csv`, `evidence-register.csv`, and `bia.md`; and Mikhail Sobhi should open `access-control-policy.md`. These links are included in the slide as clickable references to the reviewed `final-report` branch.
-
 ## Closing recommendation
 
 Approve a **conditional go-live gate**: no migration or production access until RM-01 through RM-08 are complete, evidenced, and reviewed by the Control Owner / Auditor, with residual risk accepted by the COO. Then operate the 90-day monitoring and review plan and reassess the register annually.
