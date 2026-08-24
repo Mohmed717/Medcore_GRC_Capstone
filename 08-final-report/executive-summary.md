@@ -1,0 +1,11 @@
+# Executive Summary
+
+MedCore Clinics plans to move patient records from 14 local clinics in three cities to one cloud-based ClinicCloud EHR. The design can improve centralized care, scheduling, and billing, but it concentrates restricted patient data, identity, and availability risks in a public-internet SaaS model. The project is still pre-implementation; this assessment does not claim that the planned controls are operating.
+
+The overall risk posture is **Critical before go-live**. The register contains 16 architecture-specific risks: nine Critical and seven High. The most urgent are credential compromise because MFA is available but not enabled; cross-clinic exposure because location-level authorization is not designed; migration-folder disclosure because Restricted CSV exports have no lifecycle controls; and undetected unauthorized access because MedCore has no designed access to audit logs. Supplier assurance, endpoint management, remote support, incident response, and backup recovery are also unresolved.
+
+The single most important recommendation is to make go-live conditional on an evidence-based security gate. Before migration or launch, MedCore should enable MFA, enforce clinic-level least privilege, protect and reconcile CSV imports, establish a managed endpoint baseline, obtain supplier security commitments, receive audit logs, approve an incident-response process, and verify encrypted backups and restore objectives. The COO should accept residual risk only after the Control Owner / Auditor confirms the evidence.
+
+This assessment uses **NIST CSF 2.0** consistently. The framework is suitable because it provides a common taxonomy for understanding, prioritizing, and communicating cybersecurity outcomes without prescribing one implementation method. The full mapping covers 16 control areas and identifies nine Not Addressed, seven Partially Addressed, and zero Fully Addressed in the design evidence.
+
+The recommended sequence is: launch blockers before go-live; access, supplier, monitoring, and recovery reviews during the first 90 days; and continuous improvement through quarterly reviews, annual reassessment, stronger authentication, and supplier-exit planning. The supporting risk register, gap analysis, BIA, policy, evidence register, and presentation notes are linked from the final report.

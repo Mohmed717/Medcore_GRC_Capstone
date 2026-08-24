@@ -1,31 +1,48 @@
-# Presentation Notes
+# MedCore Clinics GRC Presentation Notes
 
-## Slide 1 — Title
-Speaker: TBD
+**Target duration:** 10–12 minutes
+**Audience:** Executive sponsor and class review
+**Framework:** NIST CSF 2.0
 
-## Slide 2 — Scenario & Scope
-Speaker: TBD
+| Segment | Time | Presenter role | Core message |
+|---|---:|---|---|
+| 1. Business context | 1:00 | Team Lead / Presenter | MedCore has 14 clinics moving records to one cloud EHR before security governance exists. |
+| 2. Scope and assets | 1:00 | Team Lead / Presenter | The design creates 16 material assets, including restricted patient data, endpoints, migration files, vendors, and backups. |
+| 3. Architecture and data flow | 1:00 | Team Lead / Presenter | The critical boundaries are the public internet, ClinicCloud, third-party APIs, migration folder, backups, and remote support. |
+| 4. Threat actors and attack chain | 1:30 | Threat Modeler | A stolen laptop plus no MFA can lead to ClinicCloud access, cross-clinic visibility, and delayed detection. |
+| 5. Risk method and top risks | 1:30 | Risk Analyst | Sixteen risks were scored qualitatively using Likelihood × Impact; nine are Critical and seven High. |
+| 6. Risk matrix and treatment | 1:00 | Risk Analyst | The top priorities are MFA, clinic-level authorization, migration-folder protection, endpoint controls, logging, and supplier assurance. |
+| 7. Framework and gaps | 1:15 | Compliance Officer | NIST CSF 2.0 maps 16 areas; nine are Not Addressed and seven Partially Addressed in the design. |
+| 8. Controls, evidence, and BIA | 1:15 | Control Owner / Auditor | Design citations support the ratings, but no operating effectiveness is claimed; EHR and migration cutover are Mission-Critical. |
+| 9. Policy | 0:45 | Policy Writer | The Access Control Policy turns the highest gaps into testable MFA, least-privilege, lifecycle, endpoint, logging, and exception rules. |
+| 10. Roadmap and decision | 1:00 | Team Lead / Presenter | Go-live should be conditional on evidence for eight launch blockers; remaining improvements follow in 90 days and continuously. |
 
-## Slide 3 — Threats
-Speaker: TBD
+## Speaker prompts
 
-## Slide 4 — Risk Assessment
-Speaker: TBD
+### Team Lead / Presenter
 
-## Slide 5 — Risk Matrix
-Speaker: TBD
+Open with the decision: MedCore should not migrate or launch until the listed controls are evidenced. Explain that the repository is intentionally a design-phase assessment, not a claim that the system is already secure. Close by asking the COO to approve the launch gate, owners, and evidence requirements.
 
-## Slide 6 — Controls
-Speaker: TBD
+### Threat Modeler
 
-## Slide 7 — Compliance
-Speaker: TBD
+Show the flow from a clinic laptop to ClinicCloud and the external services. Explain that TLS 1.2 protects transport but does not solve stolen sessions, missing MFA, broad authorization, or missing logs. Walk through the six-step stolen-laptop chain in the attack-scenarios folder.
 
-## Slide 8 — Policies
-Speaker: TBD
+### Risk Analyst
 
-## Slide 9 — Recommendations
-Speaker: TBD
+Explain the shared 5×5 method and why the ratings are qualitative. Emphasize that the Critical scores are driven by restricted PHI, broad access, and absent controls—not by invented probabilities or financial figures.
 
-## Slide 10 — Conclusion
-Speaker: TBD
+### Compliance Officer
+
+Explain why one framework was selected and used consistently. Point to the regulatory exposures required by the exercise: minimum-necessary access, audit trail, and breach notification. Distinguish design statements from operating evidence.
+
+### Control Owner / Auditor
+
+Explain the evidence rule and BIA. Nightly backup is a planned dependency, not a tested recovery capability. State that the sign-off is conditional on restore tests, log access, access reviews, and control evidence.
+
+### Policy Writer
+
+Highlight that the policy contains numbered, testable statements. The most important rule is that every human account must use MFA before activation, followed by clinic-level least privilege and timely offboarding.
+
+## Closing recommendation
+
+Approve a **conditional go-live gate**: no migration or production access until RM-01 through RM-08 are complete, evidenced, and reviewed by the Control Owner / Auditor, with residual risk accepted by the COO. Then operate the 90-day monitoring and review plan and reassess the register annually.

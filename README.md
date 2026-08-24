@@ -1,110 +1,35 @@
-# MedCore GRC Capstone
+# MedCore Clinics GRC Capstone
 
-A collaborative GRC capstone for **MedCore Clinics**, a fictional clinic chain moving patient records to a cloud-based system without an existing security policy.
+This repository contains a complete **design-phase GRC assessment** for MedCore Clinics, a fictional chain of 14 outpatient clinics migrating patient records to the ClinicCloud cloud EHR. The work follows the supplied MedCore GRC Resource Pack and Unified Handbook and deliberately does not claim that the design has been implemented or tested.
 
-> **Official project requirements:** the capstone is a team-of-6 project with six listed roles: Risk Analyst, Compliance Officer, Threat Modeler, Control Owner / Auditor, Policy Writer, and Team Lead / Presenter. The project requires a real framework (ISO 27001 or NIST CSF), a scored risk matrix using likelihood × impact, at least 12 risks, a written report, presentation, and evidence.  
-> This repository adds **System Analysis / project coordination as an internal responsibility of the Team Lead** only if the instructor approves that arrangement.
+## Decision summary
 
-## Project Goals
+The project uses **NIST Cybersecurity Framework (CSF) 2.0** consistently. The assessment contains 16 assets, 16 threats, 16 qualitative risks scored with Likelihood × Impact, 16 mapped control areas, a control and evidence assessment, a five-process BIA, a standalone Access Control Policy, an executive summary, a final report, and a three-horizon remediation roadmap.
 
-- Build a patient-data risk register.
-- Identify realistic threats.
-- Assess and prioritize at least 12 risks.
-- Map findings to a recognized framework.
-- Define security controls and evidence.
-- Produce policies and prioritized recommendations.
-- Prepare the final report and 10–15 minute presentation.
+The current design posture is **Critical before go-live**: nine risks are Critical and seven are High. The launch gate is conditional on MFA, clinic-level least privilege, endpoint management, migration-file protection and reconciliation, supplier assurance, MedCore audit-log access, incident response, and backup/recovery evidence.
 
-## Team
+## Deliverables
 
-| Member | Role | Main Output |
-|---|---|---|
-| TBD | Risk Analyst | Risk Register, Risk Matrix, Risk Treatment |
-| TBD | Compliance Officer | Framework Mapping, Gap Assessment |
-| TBD | Threat Modeler | Threat Model, Attack Scenarios |
-| TBD | Control Owner / Auditor | Control Matrix, Evidence, Findings |
-| TBD | Policy Writer | Security Policies |
-| TBD | Team Lead / Presenter + System Analysis coordination | Workflow, Integration, Final Report, Presentation |
+| Area | Main files |
+|---|---|
+| Scope and assets | [`01-project-scope/scope.md`](01-project-scope/scope.md), [`01-project-scope/assets.csv`](01-project-scope/assets.csv), [`01-project-scope/framework-decision.md`](01-project-scope/framework-decision.md) |
+| Threat model | [`02-threat-model/threat-model.md`](02-threat-model/threat-model.md), [`02-threat-model/threat-model.csv`](02-threat-model/threat-model.csv), [`02-threat-model/attack-scenarios/stolen-laptop-no-mfa.md`](02-threat-model/attack-scenarios/stolen-laptop-no-mfa.md) |
+| Risk analysis | [`03-risk-analysis/risk-register.csv`](03-risk-analysis/risk-register.csv), [`03-risk-analysis/risk-matrix.md`](03-risk-analysis/risk-matrix.md), [`03-risk-analysis/risk-treatment.md`](03-risk-analysis/risk-treatment.md) |
+| Controls and BIA | [`04-controls/control-matrix.csv`](04-controls/control-matrix.csv), [`04-controls/control-assessment.md`](04-controls/control-assessment.md), [`04-controls/evidence-register.csv`](04-controls/evidence-register.csv), [`04-controls/bia.md`](04-controls/bia.md) |
+| Compliance | [`05-compliance/framework-mapping.csv`](05-compliance/framework-mapping.csv), [`05-compliance/gap-assessment.md`](05-compliance/gap-assessment.md) |
+| Policy | [`06-policies/policies/access-control-policy.md`](06-policies/policies/access-control-policy.md), [`06-policies/policy-mapping.csv`](06-policies/policy-mapping.csv) |
+| System analysis | [`07-system-analysis/dependencies.csv`](07-system-analysis/dependencies.csv), [`07-system-analysis/diagrams/data-flow.mmd`](07-system-analysis/diagrams/data-flow.mmd), [`07-system-analysis/diagrams/data-flow.png`](07-system-analysis/diagrams/data-flow.png) |
+| Final package | [`08-final-report/executive-summary.md`](08-final-report/executive-summary.md), [`08-final-report/final-report.md`](08-final-report/final-report.md), [`08-final-report/roadmap.md`](08-final-report/roadmap.md), [`09-presentation/presentation-notes.md`](09-presentation/presentation-notes.md) |
+| Evidence and references | [`10-evidence/references/source-register.md`](10-evidence/references/source-register.md), [`docs/project-status.md`](docs/project-status.md) |
 
-## Recommended Workflow
+## Workflow and governance
 
-```text
-Scope / Scenario
-      ↓
-Assets & Processes
-      ↓
-Threat Identification
-      ↓
-Risk Identification & Assessment
-      ↓
-Controls
-      ↓
-Compliance / Framework Mapping
-      ↓
-Policies & Recommendations
-      ↓
-Integration Review
-      ↓
-Final Report + Presentation
-```
+The repository follows the supplied workflow: assets and scope → threats → risks → controls and BIA → framework mapping → policy → roadmap and final integration → presentation. Work should be reviewed by another role before merge. Named team members are intentionally not invented and remain a team decision.
 
-Some activities can run in parallel after their required inputs exist.
+## Important limitation
 
-## Repository Structure
+All records are fictional and qualitative. Design statements and vendor claims are not operating evidence. Before a real go-live decision, the team must collect configurations, signed supplier terms, access reviews, audit logs, restore tests, migration reconciliation, and an exercised incident-response record.
 
-- `01-project-scope/` — scope, requirements, assumptions, assets
-- `02-threat-model/` — threats and attack scenarios
-- `03-risk-analysis/` — risk register, matrix, treatment, recommendations
-- `04-controls/` — controls, assessment, evidence
-- `05-compliance/` — framework mapping and gaps
-- `06-policies/` — policy documents and mapping
-- `07-system-analysis/` — workflow, dependencies, requirements
-- `08-final-report/` — final report
-- `09-presentation/` — slides and speaker notes
-- `10-evidence/` — screenshots, logs, references
-- `docs/` — project-level documentation
-- `templates/` — reusable templates
-- `.github/ISSUE_TEMPLATE/` — GitHub task templates
+## References
 
-## Branching
-
-Use one branch per role:
-
-- `risk-analyst`
-- `threat-modeler`
-- `control-owner`
-- `compliance`
-- `policy-writer`
-- `team-lead`
-
-Do not commit directly to `main`. Open a Pull Request when a deliverable is ready for review.
-
-## Definition of Done
-
-A deliverable is done when:
-
-- [ ] The required fields are complete.
-- [ ] Sources/references are recorded where applicable.
-- [ ] Evidence is attached or linked.
-- [ ] Dependencies are satisfied.
-- [ ] Another team member has reviewed it.
-- [ ] The Team Lead has approved integration into `main`.
-
-## Framework
-
-Choose **one** framework and record the decision in `01-project-scope/framework-decision.md`.
-
-Options specified by the project:
-- NIST CSF
-- ISO 27001
-
-## Evidence
-
-Keep screenshots, logs, diagrams, and notes as work progresses. Do not include secrets, passwords, API keys, personal data, or real patient information.
-
-## Presentation
-
-The final presentation should tell a clear story:
-
-**Company → Scope → Threats → Risks → Risk Matrix → Controls → Compliance → Policies → Recommendations → Conclusion**
-
+The primary scenario source is the supplied `MedCore_Clinics_GRC_Resource_Pack.pdf`; the workflow and ownership source is the supplied `MedCore_GRC_Unified_Handbook.pdf`. The external framework reference is [NIST CSF 2.0](https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20) and [NIST CSWP 29](https://doi.org/10.6028/NIST.CSWP.29).
